@@ -2,15 +2,18 @@ import React from 'react';
 import Header from './Header';
 import Home from './Home';
 import Booch from './Booch';
-// import { Switch, Route } from 'react-router-dom';
-// import Error404 from './Error404';
+import { Switch, Route } from 'react-router-dom';
+import Error404 from './Error404';
 
 function App(){
   return (
     <div>
       <Header/>
-      <Home/>
-      <Booch/>
+      <Switch>
+        <Route exact path='/' component={Home, Booch}/>
+        <Route component={Error404}/>
+      </Switch>
+
 
       <style jsx global>{`
         body {
