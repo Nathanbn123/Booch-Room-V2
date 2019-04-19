@@ -1,4 +1,5 @@
 import React from 'react';
+import Home from './Home';
 
 
 
@@ -39,23 +40,16 @@ function Booch() {
     <div>
       {Drinks.map((drink, index) =>
         <Home
+          name={drink.name}
+          brand={drink.brand}
+          price={drink.price}
+          flavor={drink.flavor}
+        />
+
+
 
       )}
-
-
-
-
-
-
-
-
-
     </div>
-
-
-
-
-
-  )}
+  );}
 
 export default Booch;

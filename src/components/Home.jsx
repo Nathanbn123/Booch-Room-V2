@@ -28,4 +28,15 @@ function Home(props) {
   );
 }
 
+Home.propTypes = {
+  name: PropTypes.string,
+  brand: PropTypes.string,
+  price: PropTypes.number,
+  flavor: PropTypes.string
+
+
+};
+
+
+
 export default Home;

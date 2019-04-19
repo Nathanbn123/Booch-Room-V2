@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Home from './Home';
+import Booch from './Booch';
 // import { Switch, Route } from 'react-router-dom';
 // import Error404 from './Error404';
 
@@ -9,6 +10,7 @@ function App(){
     <div>
       <Header/>
       <Home/>
+      <Booch/>
 
       <style jsx global>{`
         body {
