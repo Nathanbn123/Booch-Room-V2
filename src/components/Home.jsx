@@ -10,21 +10,24 @@ function Home(props) {
 
   return (
     <div>
-      <h3>{props.name}</h3>
-      <h4><em>{props.brand}</em></h4>
-      <p><em>{props.flavor}</em></p>
-      <p>${props.price}</p>
-
-      <hr/>
-
+      
+      <div className='container'>
+        <h3>{props.name}</h3>
+        <h4><em>{props.brand}</em></h4>
+        <p><em>{props.flavor}</em></p>
+        <p>${props.price}</p>
+        <hr/>
+      </div>
 
       <style jsx>{`
           div {
             text-align: center;
+            padding: 2em;
           }
 
           hr {
-            width: 30%;
+            width: 10%;
+            margin-top: 3em;
 
           }
 
