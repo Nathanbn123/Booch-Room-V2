@@ -39,11 +39,11 @@ function Booch() {
   return (
     <div>
       {Drinks.map((drink, index) =>
-        <Home
-          name={drink.name}
+        <Home  name={drink.name}
           brand={drink.brand}
           price={drink.price}
           flavor={drink.flavor}
+          key={index}
         />
 
 

@@ -9,16 +9,24 @@ function Home(props) {
 
 
   return (
-
     <div>
       <h3>{props.name}</h3>
       <h4><em>{props.brand}</em></h4>
-      <p>{props.price}</p>
       <p><em>{props.flavor}</em></p>
+      <p>${props.price}</p>
+
+      <hr/>
 
 
       <style jsx>{`
+          div {
+            text-align: center;
+          }
 
+          hr {
+            width: 30%;
+
+          }
 
 
 
