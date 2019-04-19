@@ -1,20 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 function Header(){
+
+  
+  
+  
+  
   return (
     <div>
-
-      <a><Link to="/" style={{ textDecoration: 'none', cursor: 'crosshair' }}><h2>Farmers Market</h2></Link></a>
+      <h1>Welcome to the <em>Booch Room</em></h1>
+      <h2>What's on tap?</h2>
+      
       <style jsx>{`
-        h2 {
+        div {
           text-align: center;
-          font-size: 1.5em;
-          padding: 10px;
-          color: #9fa845;
-          border: 2px solid #5f3917;
-          border-radius: 50px;
-          text-shadow: 1px 1px #5f3917;
         }
+        
+        
+        
+        
 
         `}</style>
     </div>
