@@ -31,15 +31,31 @@ const Drinks = [
 ];
 
 
-function Team() {
+function Booch() {
 
 
 
   return (
+    <div>
+      {Drinks.map((drink, index) =>
+        <Home
 
+      )}
+
+
+
+
+
+
+
+
+
+    </div>
 
 
 
 
 
   )}
+
+export default Booch;
