@@ -1,4 +1,4 @@
-_The Booch Room(Kombucha Bar)!_
+#_The Booch Room(Kombucha Bar)!_
 
 #### _A website where you can critique my css, js and React skills!, 4/19/19_
 
@@ -6,7 +6,7 @@ _The Booch Room(Kombucha Bar)!_
 
 ## Description
 
-_This application provides the user with the opportunity to see a recreation of a popular cell phone service company site!_
+_This application provides the user with the opportunity to critique my React skills!_
 
 ## Specs
 
