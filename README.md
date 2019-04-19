@@ -1,40 +1,63 @@
-# _React Template_
+_The Booch Room(Kombucha Bar)!_
 
-## _DO NOT TOUCH THE `Webpack-dev-server` dependency unless you know what your doing. If you update it there will be errors that break the application!_
+#### _A website where you can critique my css, js and React skills!, 4/19/19_
 
-#### _This is a template using webpack for React, 04/15/19_
-
-#### By _****_
+#### By _**Nathan Nielson**_
 
 ## Description
 
-_This is a template that has been created for anyone to use. Clone it down and it will work. This template also includes scss styling_
+_This application provides the user with the opportunity to see a recreation of a popular cell phone service company site!_
+
+## Specs
+
+## Features
+
+### _Completed_
+*   _Application will generate a number info cards for corresponding data entries_
+
+### _Planned Features_
+* _Application will display a number of info cards that will display information about the countries that are served by the company using collected data_
+* _Apllication nav-bar will have functional drop-down menus when the user hovers over a nav option_
+
+
+
 
 ## Setup/Installation Requirements
 
-* _Run `git clone https://github.com/Lilkgb/react-template` in your terminal of choice_
-* _Navigate to where you put the folder inside your terminal and run `npm install`_
-* _After the install is complete you can run `npm run start` to see a live version of the website._
-
+* _Use your command terminal (gitbash if you're using a windows machine) to clone the latest commit from Github, using the url provided_
+* _Once the download is complete, use your terminal to 'cd' into the project folder_
+* _Once inside, run 'npm install' in your terminal to install necessary plugins_
+* _When the install is complete, enter 'npm run start' in your terminal to open the site in your browser!_
+* _To view the code, press 'CTRL + C' to stop the auto update, run "atom ." in your terminal then navigate to the 'src' folder and open whatever you wish to view!_
 
 ## Known Bugs
-
-_If you run `npm run lint` on pc you will get `Expected linebreaks to be 'LF' but found 'CRLF'`. It doesn't break the code and will still run correctly when you run `npm run start`_
+_There are currently no known bugs, please feel free to email me if you find any!_
 
 ## Support and contact details
+_If you encounter any bugs or issues not documented during your experience, please feel free to contact me at my email: nathans-email@email.com_
 
-_Please contact - at -@gmail.com_
+## Technologies used
 
-## Technologies Used
-
-_scss_
-_Webpack_
-_React_
-_eslint_
-_AOS_
+_This application was created using HTML, CSS, Bootstrap, Javascript and Angular_
 
 ### License
 
-*This Software is Licensed under the MIT License.*
+Copyright (c) 2019 **_Nathan Nielson, Epicodus_**
 
-Copyright (c) 2019 **__**
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
