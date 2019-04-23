@@ -8,18 +8,13 @@
 
 _This application provides the user with the opportunity to critique my React skills!_
 
+_I found this project to be much more simple and enjoyable using React compared to Angular, though I am not currently able to integrate the same functionality as I did using Angular, I found React to be far more effective and intuitive._
+
+## Notes
+
 ## Specs
 
 ## Features
-
-### _Completed_
-*   _Application will generate a number info cards for corresponding data entries_
-
-### _Planned Features_
-* _Application will display a number of info cards that will display information about the countries that are served by the company using collected data_
-* _Apllication nav-bar will have functional drop-down menus when the user hovers over a nav option_
-
-
 
 
 ## Setup/Installation Requirements
