@@ -8,6 +8,8 @@ function Admin(props) {
 
 
 
+
+
   return(
     <div>
       <a><Link to='/' style={{ textDecoration: 'none', cursor: 'crosshair' }}><button>Home</button></Link></a>
@@ -18,14 +20,15 @@ function Admin(props) {
       <input placeholder='Kombucha Price'></input>
       <br/>
       <button>Submit!</button>
-
-      <h2>Edit a keg!</h2>
-      <input></input>
-      <input></input>
-      <input></input>
-      <input></input>
-        <br/>
-      <button onSubmit={props.onEditBooch}>Submit!</button>
+      <form>
+        <h2>Edit a keg!</h2>
+        <input></input>
+        <input></input>
+        <input></input>
+        <input></input>
+          <br/>
+        <button type='submit' onSubmit={props.onEditBooch}>Submit!</button>
+      </form>
       <style jsx> {`
           div {
             text-align: center;
