@@ -6,7 +6,7 @@ import Admin from './Admin';
 import { Switch, Route } from 'react-router-dom';
 import Error404 from './Error404';
 
-class App extends React.component {
+class App extends React.Component {
 
   constructor(props) {
     super(props);
@@ -17,12 +17,20 @@ class App extends React.component {
       price: null,
       pints: 25
     };
+    this.editBooch = this.editBooch.bind(this);
   }
 
   sellSomeBooch() {
-    this.state.pints - 1;
-
+  this.setState({pints : (this.state.pints - 1) } ) ;
   }
+
+  editBooch(name, brand, flavor, price) {
+      this.setState({name : (this.state.name = name)})
+      this.setState({brand : (this.state.name = brand)})
+      this.setState({flavor : (this.state.name = flavor)})
+      this.setState({price : (this.state.name = price)})
+  }
+
 
 
 
