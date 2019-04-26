@@ -17,20 +17,26 @@ class App extends React.Component {
       price: null,
       pints: 25
     };
+    this.handleAddNewBooch = this.handleAddNewBooch.bind(this);
     this.editBooch = this.editBooch.bind(this);
   }
 
   sellSomeBooch() {
-  this.setState({pints : (this.state.pints - 1) } ) ;
+    this.setState({pints : (this.state.pints - 1) } ) ;
   }
 
   editBooch(name, brand, flavor, price) {
-      this.setState({name : (this.state.name = name)})
-      this.setState({brand : (this.state.name = brand)})
-      this.setState({flavor : (this.state.name = flavor)})
-      this.setState({price : (this.state.name = price)})
+    this.setState({name : (this.state.name = name)});
+    this.setState({brand : (this.state.name = brand)});
+    this.setState({flavor : (this.state.name = flavor)});
+    this.setState({price : (this.state.name = price)});
   }
 
+  handleAddNewBooch(newBooch){
+    var newBoochList = this.state.boochList.slice();
+    newBoochList.push(newBooch);
+    this.setState({boochList: newBoochList});
+  }
 
 
 
@@ -54,8 +60,8 @@ class App extends React.Component {
               background-color: #e7e8d9;
             }
             `}</style>
-        </div>
-      );
-    }
+      </div>
+    );
   }
+}
 export default App;
