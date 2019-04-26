@@ -11,6 +11,8 @@ function Admin(props) {
 
   function handleAddNewBooch(event) {
     event.preventDefault();
+    props.onAddNewBooch({name: _names.value, brand: _brand.value, flavor: _flavor.value,
+    price: _price.value});
     _name.value = '';
     _brand.value = '';
     _flavor.value = '';
@@ -75,8 +77,9 @@ function Admin(props) {
 }
 
 Admin.propTypes = {
+  boochList: PropTypes.array,
   onEditBooch: PropTypes.func,
-  handleAddNewBooch: PropTypes.func
+  onAddNewBooch: PropTypes.func
 };
 
 

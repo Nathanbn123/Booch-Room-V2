@@ -11,6 +11,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      boochList: [],
       name: null,
       brand: null,
       flavor: null,
@@ -48,7 +49,10 @@ class App extends React.Component {
         <Header/>
         <Switch>
           <Route exact path='/' component={Home, Booch}/>
-          <Route path='/Admin' render={()=><Admin onEditBooch={this.editBooch}/>}/>
+          <Route path='/Admin' render={()=><Admin
+              boochList={this.state.boochList}
+              onAddNewBooch={this.handleAddNewBooch}
+              onEditBooch={this.editBooch}/>}/>
           <Route component={Error404}/>
         </Switch>
 
