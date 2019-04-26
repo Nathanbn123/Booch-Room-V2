@@ -14,6 +14,8 @@ _I found this project to be much more simple and enjoyable using React compared 
 
 ## Specs
 
+![image of spec tree] (booch-room-tree-1)
+
 ## Features
 
 
