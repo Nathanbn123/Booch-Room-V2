@@ -1,4 +1,4 @@
-#_The Booch Room(Kombucha Bar)!_
+## _The Booch Room(Kombucha Bar)!_
 
 #### _A website where you can critique my css, js and React skills!, 4/19/19_
 
