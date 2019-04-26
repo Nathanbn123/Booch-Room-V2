@@ -14,11 +14,10 @@ _I found this project to be much more simple and enjoyable using React compared 
 
 ## Specs
 
-<<<<<<< HEAD
+
 ![image of spec tree](booch-room-tree-1.png)
-=======
-![image of spec tree] (/booch-room-tree-1.png)
->>>>>>> 580bb1f1ee761077a2c6492c8fe6def73f686a09
+
+
 
 ## Features
 
