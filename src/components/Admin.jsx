@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+
+
+function Admin(props) {
 
 
 
-function Admin() {
 
   return(
     <div>
@@ -22,18 +25,24 @@ function Admin() {
       <input></input>
       <input></input>
         <br/>
-      <button>Submit!</button>
+      <button onSubmit={props.onEditBooch}>Submit!</button>
       <style jsx> {`
-    div {
-      text-align: center;
+          div {
+            text-align: center;
 
-    }
-
-
+          }
 
 
-  `}</style>
-    </div>
-  );}
+
+
+          `}</style>
+      </div>
+    );
+  }
+
+Admin.propTypes = {
+  onEditBooch: PropTypes.func
+};
+
 
 export default Admin;

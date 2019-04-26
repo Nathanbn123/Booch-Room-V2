@@ -42,7 +42,7 @@ class App extends React.Component {
         <Header/>
         <Switch>
           <Route exact path='/' component={Home, Booch}/>
-          <Route exact path='/Admin' component={Admin}/>
+          <Route path='/Admin' render={()=><Admin onEditBooch={this.editBooch}/>}/>
           <Route component={Error404}/>
         </Switch>
 
