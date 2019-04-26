@@ -1,5 +1,6 @@
 import React from 'react';
 import Home from './Home';
+import PropTypes from 'prop-types';
 
 
 
@@ -32,13 +33,13 @@ import Home from './Home';
 // ];
 
 
-function Booch() {
+function Booch(props) {
 
 
 
   return (
     <div>
-      {Drinks.map((drink, index) =>
+      {props.boochList.map((drink, index) =>
         <Home  name={drink.name}
           brand={drink.brand}
           price={drink.price}
@@ -50,6 +51,14 @@ function Booch() {
 
       )}
     </div>
-  );}
+  );
+}
+
+
+Booch.propTypes = {
+    boochList: PropTypes.array
+  };
+
+
 
 export default Booch;

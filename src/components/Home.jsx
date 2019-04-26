@@ -10,7 +10,7 @@ function Home(props) {
 
   return (
     <div>
-      
+
       <div className='container'>
         <h3>{props.name}</h3>
         <h4><em>{props.brand}</em></h4>
@@ -45,7 +45,7 @@ Home.propTypes = {
   price: PropTypes.number,
   flavor: PropTypes.string
 
-
+  
 };
 
 

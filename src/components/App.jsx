@@ -18,6 +18,7 @@ class App extends React.Component {
       price: null,
       pints: 25
     };
+    
     this.handleAddNewBooch = this.handleAddNewBooch.bind(this);
     this.editBooch = this.editBooch.bind(this);
   }
@@ -49,10 +50,14 @@ class App extends React.Component {
         <Header/>
         <Switch>
           <Route exact path='/' component={Home, Booch}/>
-          <Route path='/Admin' render={()=><Admin
-              boochList={this.state.boochList}
+          <Route exact path='/Admin' render={()=><Admin
+
               onAddNewBooch={this.handleAddNewBooch}
               onEditBooch={this.editBooch}/>}/>
+
+            <Route exact path='/Booch' render={()=> <Booch
+            boochList={this.state.boochList} />} />
+
           <Route component={Error404}/>
         </Switch>
 
