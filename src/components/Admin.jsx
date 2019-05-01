@@ -63,14 +63,12 @@ function Admin(props) {
         <br/>
         <button type='submit' onSubmit={props.onEditBooch}>Submit!</button>
       </form>
+
       <style jsx> {`
           div {
             text-align: center;
 
           }
-
-
-
 
           `}</style>
     </div>
@@ -78,7 +76,6 @@ function Admin(props) {
 }
 
 Admin.propTypes = {
-
   onEditBooch: PropTypes.func,
   onAddNewBooch: PropTypes.func
 };

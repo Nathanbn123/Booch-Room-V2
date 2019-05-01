@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import Home from './Home';
+import BoochList from './BoochList';
 import Booch from './Booch';
 import Admin from './Admin';
 import { Switch, Route } from 'react-router-dom';
@@ -11,7 +11,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      boochList: [],
+      masterBoochList: [],
       name: null,
       brand: null,
       flavor: null,
@@ -34,13 +34,10 @@ class App extends React.Component {
   }
 
   handleAddNewBooch(newBooch){
-    var newBoochList = this.state.boochList.slice();
-    newBoochList.push(newBooch);
-    this.setState({boochList: newBoochList});
+    var newMasterBoochList = this.state.masterBoochList.slice();
+    newMasterBoochList.push(newBooch);
+    this.setState({masterBoochList: newMasterBoochList});
   }
-
-
-
 
 
   render(){
@@ -48,14 +45,11 @@ class App extends React.Component {
       <div>
         <Header/>
         <Switch>
-          <Route exact path='/' component={Home, Booch}/>
+          <Route exact path='/' render={()=> <BoochList
+              boochList={this.state.masterBoochList} />} />
           <Route exact path='/Admin' render={()=><Admin
               onAddNewBooch={this.handleAddNewBooch}
               onEditBooch={this.editBooch}/>}/>
-
-            <Route exact path='/Booch' render={()=> <Booch
-            boochList={this.state.boochList} />} />
-
           <Route component={Error404}/>
         </Switch>
 

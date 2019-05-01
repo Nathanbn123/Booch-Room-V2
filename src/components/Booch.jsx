@@ -1,64 +1,48 @@
 import React from 'react';
-import Home from './Home';
 import PropTypes from 'prop-types';
+// import { Link } from 'react-router-dom';
 
 
 
-// const Drinks = [
-//   {
-//     name: 'Radiate',
-//     brand: 'Soma',
-//     price: 5.50 ,
-//     flavor: 'Cherry Chai',
-//   },
-//   {
-//     name: 'Uplift',
-//     brand: 'Brew DR',
-//     price: 6.50 ,
-//     flavor: 'Peppermint Green Tea',
-//   },
-//   {
-//     name: 'Coconut lime',
-//     brand: 'humm',
-//     price: 5.50 ,
-//     flavor: 'Coconut lime',
-//   },
-//   {
-//     name: 'Ginger Juniper',
-//     brand: 'humm',
-//     price: 6.50 ,
-//     flavor: 'Ginger Juniper',
-//   },
-//
-// ];
-
-
-function Booch(props) {
-
-
-
+function Bootch(props) {
   return (
     <div>
-      {props.boochList.map((drink, index) =>
-        <Home  name={drink.name}
-          brand={drink.brand}
-          price={drink.price}
-          flavor={drink.flavor}
-          key={index}
-        />
+
+      <div className='container'>
+        <h3>{props.name}</h3>
+        <h4><em>{props.brand}</em></h4>
+        <p><em>{props.flavor}</em></p>
+        <p>${props.price}</p>
+        <hr/>
+      </div>
+
+      <style jsx>{`
+          div {
+            text-align: center;
+            padding: 2em;
+          }
+
+          hr {
+            width: 10%;
+            margin-top: 3em;
+
+          }
 
 
 
-      )}
+
+        `}</style>
     </div>
   );
 }
 
+Bootch.propTypes = {
+  name: PropTypes.string,
+  brand: PropTypes.string,
+  price: PropTypes.number,
+  flavor: PropTypes.string
+};
 
-Booch.propTypes = {
-    boochList: PropTypes.array
-  };
 
 
-
-export default Booch;
+export default Bootch;
