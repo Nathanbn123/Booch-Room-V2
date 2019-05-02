@@ -11,10 +11,10 @@ function Admin(props) {
 
   function handleAddNewBooch(event) {
     event.preventDefault();
-    console.log(_name.value)
+    console.log(_name.value);
 
     props.onAddNewBooch({name: _name.value, brand: _brand.value, flavor: _flavor.value,
-    price: _price.value});
+      price: _price.value});
     _name.value = '';
     _brand.value = '';
     _flavor.value = '';

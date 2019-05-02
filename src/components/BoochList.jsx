@@ -51,8 +51,8 @@ function BoochList(props) {
 
 
 Booch.propTypes = {
-    boochList: PropTypes.array
-  };
+  boochList: PropTypes.array
+};
 
 
 

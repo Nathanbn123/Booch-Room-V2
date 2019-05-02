@@ -16,7 +16,8 @@ class App extends React.Component {
       brand: null,
       flavor: null,
       price: null,
-      pints: 25
+      pints: 25,
+      selectedBooch: null
     };
     this.handleAddNewBooch = this.handleAddNewBooch.bind(this);
     this.editBooch = this.editBooch.bind(this);
@@ -46,10 +47,10 @@ class App extends React.Component {
         <Header/>
         <Switch>
           <Route exact path='/' render={()=> <BoochList
-              boochList={this.state.masterBoochList} />} />
+            boochList={this.state.masterBoochList} />} />
           <Route exact path='/Admin' render={()=><Admin
-              onAddNewBooch={this.handleAddNewBooch}
-              onEditBooch={this.editBooch}/>}/>
+            onAddNewBooch={this.handleAddNewBooch}
+            onEditBooch={this.editBooch}/>}/>
           <Route component={Error404}/>
         </Switch>
 
